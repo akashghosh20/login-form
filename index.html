@@ -5,12 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/8da8d8224b.js" crossorigin="anonymous"></script>
+    <style>
+        .login-form{
+            display: flex;
+            flex-direction: column;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        .login-form input, button{
+            font-size: 1.3em;
+            margin-top: 10px;
+            border: 1px solid lightcoral;
+            padding-left: 10px;        }
+            .login-form button{
+                background-color: lightgreen;
+                color:rgb(16, 61, 119);
+            }
+            nav a{
+                text-decoration: none;
+                color: black;
+                margin-right: 15px;
+            }
+            nav{
+                display: flex;
+                justify-content:space-between ;
+            }
+    </style>
 </head>
 <body>
+    <header>
+        <nav>
+           <span>
+            <a href=""> Home</a>
+            <a href=""> Exam</a>
+            <a href=""> Courses </a>
+            <a href=""> About Us</a>
+           </span>
+           <span>
+            <a href=""> <i class="fas fa-house-user"></i></a>
+            <a href=""> <i class="fas fa-door-closed"></i></a>
+           </span>
+
+        </nav>
+    </header>
     <section class="container">
         <form action="" class="login-form">
             <h2>Login</h2>
-            <input type="email" placeholder="type your rmail">
+            <input type="email" placeholder="type your email" required>
+            <input type="password" placeholder="type yout password" name="" id="" required>
+            <button type="submit">Submit</button>
         </form>
     </section>
 </body>
